@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+      .error {
+        background-image: url(./images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: right 5% bottom 50%;
+        background-size: 7%;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-red bg-cover flex flex-col justify-center items-center h-auto px-5"
+  >
+    <section
+      class="mx-auto bg-repeat"
+      style="background-image: url(./images/bg-intro-mobile.png)"
+    >
+      <div
+        class="container mx-auto text-center text-white mt-10 lg:flex lg:justify-between lg:items-center lg:w-3/4 lg:min-h-screen"
+      >
+        <div class="left lg:w-1/2 lg:text-left">
+          <h1
+            class="text-2xl font-semibold w-3/4 mx-auto mb-4 lg:mx-0 lg:text-4xl"
+          >
+            Learn to code by watching others
+          </h1>
+          <p class="font-light text-sm px-2 mb-10 lg:pl-0 lg:mr-14">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but undrstanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="right lg:w-1/2">
+          <button
+            class="bg-blue hover:bg-indigo-500 hover:text-sm mb-4 px-5 rounded-xl w-full text-xs transition-colors"
+          >
+            <p class="p-5">
+              <span class="text-sm font-semibold">Try it free 7 days</span>
+              then $20/mo. thereafter
+            </p>
+          </button>
+          <div
+            class="flex flex-col bg-white justify-center items-center rounded-md"
+          >
+            <form
+              id="myForm"
+              action=""
+              class="flex flex-col justify-center items-center mt-2 bg-white"
+            >
+              <input
+                id="firstName"
+                class="input mt-8 border-2 border-slate-300 p-2 h-10 w-64 rounded-md focus:border-green focus:ring-1 placeholder-italic placeholder-px-4 placeholder-text-sm text-black lg:w-96 outline-none"
+                type="text"
+                placeholder="First Name"
+              />
+              <div class="warning relative left-[28%] top-1 hidden">
+                <p class="text-red text-[0.5rem] text-right">
+                  First name cannot be empty
+                </p>
+              </div>
+
+              <br />
+              <input
+                id="lastName"
+                class="input border-slate-300 p-2 h-10 w-64 border-[1px] rounded-md focus:border-green focus:ring-1 placeholder-italic placeholder-px-4 placeholder-text-sm text-black lg:w-96 outline-none"
+                type="text"
+                placeholder="Last Name"
+              />
+              <div class="warning relative left-[28%] top-1 hidden">
+                <p class="text-red text-[0.5rem] text-right">
+                  Last name cannot be empty
+                </p>
+              </div>
+              <br />
+              <input
+                id="email"
+                class="input border-slate-300 p-2 h-10 w-64 border-[1px] rounded-md focus:border-green focus:ring-1 placeholder-italic placeholder-px-4 placeholder-text-sm text-black lg:w-96 outline-none"
+                type="email"
+                placeholder="Email"
+              />
+              <div class="warning relative left-[28%] top-1 hidden">
+                <p class="text-red text-[0.5rem] text-right">
+                  Email cannot be empty
+                </p>
+              </div>
+              <br />
+              <input
+                id="pass"
+                class="input border-slate-300 p-2 h-10 w-64 border-[1px] rounded-md focus:border-green focus:ring-1 placeholder-italic placeholder-px-4 placeholder-text-sm text-black lg:w-96 outline-none"
+                type="password"
+                placeholder="Password"
+              />
+              <div class="warning relative left-[28%] top-1 hidden">
+                <p class="text-red text-[0.5rem] text-right">
+                  Your Password cannot be empty
+                </p>
+              </div>
+
+              <button
+                class="bg-green hover:bg-gradient-to-r from-green to-lime-400 w-64 mt-5 rounded-md p-3 text-sm uppercase font-semibold lg:w-96"
+                type="submit"
+              >
+                Claim your free trial
+              </button>
+            </form>
+
+            <p class="text-grayish-blue text-[0.6rem] w-56 mb-5 mt-3 lg:w-80">
+              By clicking the button, you are agreeing to our
+              <span class="text-red text-xs font-semibold"
+                >Terms and Services</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="m-2">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Agus Setiawan</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
